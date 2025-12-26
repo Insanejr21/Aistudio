@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Studio</title>
+
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="theme-color" content="#ffffff">
+    
+    <link rel="apple-touch-icon" href="icone.png">
+
+    <meta http-equiv="refresh" content="0; url=https://aistudio.google.com/apps">
+
+    <style>
+        body { font-family: sans-serif; text-align: center; padding-top: 20%; }
+    </style>
+</head>
+<body>
+    <p>Redirecionando para o site...</p>
+
+    <script>
+        // 4. Registrar o Service Worker (Obrigatório para ser App)
+        if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+        }
+
+        // Redirecionamento via JS
+        window.location.replace("https://aistudio.google.com/apps");
+    </script>
+</body>
+</html>
